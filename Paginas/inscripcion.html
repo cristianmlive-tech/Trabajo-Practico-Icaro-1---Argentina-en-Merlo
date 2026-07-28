@@ -35,7 +35,112 @@
                 </ul>
             </div>
         </div>
+    </nav>
+    
+       <!-- CABECERA DE LA PÁGINA -->
+    <header class="bg-dark text-white py-4 text-center">
+        <div class="container">
+            <h1 class="display-5 fw-bold">Pre-Inscripción de Delegaciones</h1>
+            <p class="lead mb-0">Completá el formulario para registrar a tu academia o ballet en el encuentro</p>
+        </div>
+    </header>
 
+    <!-- FORMULARIO DE INSCRIPCIÓN (HTML + Bootstrap) -->
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow-sm border-0 rounded-3">
+                    <div class="card-body p-4 p-md-5">
+                        
+                        <!-- Formulario estático (se conectará con Java/Backend en el futuro) -->
+                        <form action="#" method="POST">
+                            
+                            <!-- DATOS DEL DELEGADO / RESPONSABLE -->
+                            <h4 class="mb-3 text-primary border-bottom pb-2">1. Datos del Responsable</h4>
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-6">
+                                    <label for="nombreDirector" class="form-label font-weight-bold">Nombre y Apellido</label>
+                                    <input type="text" class="form-control" id="nombreDirector" placeholder="Ej: María González" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="dniDirector" class="form-label">DNI</label>
+                                    <input type="text" class="form-control" id="dniDirector" placeholder="Sin puntos" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="email" placeholder="nombre@correo.com" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="telefono" class="form-label">Teléfono / WhatsApp</label>
+                                    <input type="tel" class="form-control" id="telefono" placeholder="Ej: 3511234567" required>
+                                </div>
+                            </div>
+
+                            <!-- DATOS DE LA DELEGACIÓN -->
+                            <h4 class="mb-3 text-primary border-bottom pb-2">2. Datos de la Delegación</h4>
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-8">
+                                    <label for="nombreAcademia" class="form-label">Nombre de la Academia / Ballet / Grupo</label>
+                                    <input type="text" class="form-control" id="nombreAcademia" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="provincia" class="form-label">Provincia de Origen</label>
+                                    <select class="form-select" id="provincia" required>
+                                        <option value="" selected disabled>Seleccionar...</option>
+                                        <option value="Buenos Aires">Buenos Aires</option>
+                                        <option value="Córdoba">Córdoba</option>
+                                        <option value="Mendoza">Mendoza</option>
+                                        <option value="Santa Fe">Santa Fe</option>
+                                        <option value="San Luis">San Luis</option>
+                                        <option value="Otra">Otra provincia</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="localidad" class="form-label">Ciudad / Localidad</label>
+                                    <input type="text" class="form-control" id="localidad" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="cantidadIntegrantes" class="form-label">Cantidad aproximada de integrantes</label>
+                                    <input type="number" class="form-control" id="cantidadIntegrantes" min="1" placeholder="Ej: 25" required>
+                                </div>
+                            </div>
+
+                            <!-- DETALLES ADICIONALES -->
+                            <h4 class="mb-3 text-primary border-bottom pb-2">3. Observaciones</h4>
+                            <div class="mb-4">
+                                <label for="mensaje" class="form-label">Comentarios o requerimientos especiales (Alojamiento, vestuarios, etc.)</label>
+                                <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribí aquí tus dudas o detalles sobre la presentación..."></textarea>
+                            </div>
+
+                            <!-- BOTÓN DE ENVIAR -->
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-warning btn-lg fw-bold">Enviar Pre-Inscripción</button>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div class="mb-3 mb-md-0">
+                <img src="../Img/logo.png" alt="Logo Argentina en Merlo" class="img-fluid mb-2" style="height: 80px; width: auto;">
+            </div>
+            <div class="redes-sociales d-flex gap-3 fs-4">
+                <a href="https://www.facebook.com/TU_PAGINA" target="_blank" rel="noopener noreferrer" class="text-white hover-icono"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/TU_USUARIO" target="_blank" rel="noopener noreferrer" class="text-white hover-icono"><i class="bi bi-instagram"></i></a>
+                <a href="https://wa.me/549NUMERO" target="_blank" rel="noopener noreferrer" class="text-white hover-icono"><i class="bi bi-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
      
 </body>
 </html>
