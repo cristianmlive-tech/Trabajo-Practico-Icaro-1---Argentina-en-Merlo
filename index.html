@@ -20,7 +20,7 @@
                 <img src="./Img/LOGO.png" alt="Logo Argentina en Merlo" class="d-inline-block align-text-top me-2" style="height: 50px; width: auto;">
             </a>
             <!-- Botón de toggling para dispositivos móviles -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -45,7 +45,7 @@
                     style="max-height: 420px; width: auto; filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.5));">
             </div>
             <p class="lead fs-3 animacion-retrasada">Encuentro Nacional de Folklore</p>
-            <hr class="mx-auto my-4 text-warning" style="width: 100px; height: 3px;">
+            <hr class="mx-auto my-4 text-warning" style="width: 500px; height: 3px;">
             <p class="fs-5 mb-4">Villa de Merlo, San Luis</p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                 <a href="./Paginas/cronograma.html" class="btn btn-warning btn-lg px-4 me-sm-3 fw-bold">Ver Cronograma</a>
@@ -53,6 +53,66 @@
             </div>
         </div>
     </header>
-     
+      <!-- SECCIÓN DE PRESENTACIÓN (Bootstrap Grid) -->
+    <main class="container my-5 py-4">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h2 class="display-5 fw-bold text-dark mb-3">La Danza nos Une</h2>
+                <p class="lead text-muted">Cada año, delegaciones de todas las provincias argentinas se reúnen en el
+                    mágico microclima de la Villa de Merlo para celebrar nuestras raíces, nuestra música y nuestras
+                    danzas tradicionales.</p>
+                <p>Una propuesta única de intercambio cultural, peñas, talleres y noches de gala inolvidables bajo el
+                    cielo puntano.</p>
+                <a href="./Paginas/galeria.html" class="btn btn-outline-primary mt-2">Conocer más del evento</a>
+            </div>
+            <div class="col-lg-6">
+                <!-- Contenedor responsive 16:9 de Bootstrap con bordes redondeados y sombra -->
+                <div class="ratio ratio-16x9 rounded shadow overflow-hidden">
+                    <!-- Agregamos: autoplay, loop y muted -->
+                    <video autoplay loop muted playsinline preload="metadata" class="w-100 h-100">
+                        <source src="./Videos/folklore-merlo.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </main>
+<!-- SECCIÓN DESTACADOS (Usando CSS Grid Personalizado) -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Prepará tu viaje al Encuentro</h2>
+
+            <!-- Grilla de Tarjetas -->
+            <div class="tarjetas-grid">
+                <!-- Tarjeta 1 -->
+                <div class="tarjeta-destacada">
+                    <div class="tarjeta-icono"><i class="bi bi-calendar-event"></i></div>
+                    <h3>Cronograma</h3>
+                    <p>Enterate de los horarios, las peñas callejeras, los talleres y el gran desfile de las
+                        delegaciones.</p>
+                    <a href="#" class="btn-link">Ver horarios →</a>
+                </div>
+                <!-- Tarjeta 2 -->
+                <div class="tarjeta-destacada">
+                    <div class="tarjeta-icono"><i class="bi bi-house-heart"></i></div>
+                    <h3>Hospedajes</h3>
+                    <p>Encontrá cabañas, hoteles y campings recomendados en Merlo con tarifas especiales para
+                        bailarines.</p>
+                    <a href="#" class="btn-link">Dónde dormir →</a>
+                </div>
+                <!-- Tarjeta 3 -->
+                <div class="tarjeta-destacada">
+                    <div class="tarjeta-icono"><i class="bi bi-map"></i></div>
+                    <h3>Villa de Merlo</h3>
+                    <p>Ubicación de los teatros, anfiteatros y escenarios donde se llevarán a cabo las presentaciones.
+                    </p>
+                    <a href="https://www.google.com/maps/search/teatros/@-32.3499543,-65.0143007,15z?entry=ttu&g_ep=EgoyMDI2MDcyMi4wIKXMDSoASAFQAw%3D%3D" class="btn-link">Ver mapa de Google →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <!-- JS de Bootstrap (Necesario para que funcione el menú de celulares) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

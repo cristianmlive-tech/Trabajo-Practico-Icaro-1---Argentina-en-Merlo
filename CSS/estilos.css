@@ -35,3 +35,61 @@
     animation: aparecerDesvanecido 1.2s ease-out 0.4s forwards;
     /* Inicia un poquito después */
 }
+/* 2. CSS GRID (Clase 05 - Grilla de tarjetas para turismo/sedes/cronograma) */
+.tarjetas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* Súper responsive automático */
+    gap: 30px;
+}
+
+.tarjeta-destacada {
+    background-color: var(--color-fondo-tarjeta);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Transiciones suaves (Clase 06) */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Hover effect de las tarjetas */
+.tarjeta-destacada:hover {
+    transform: translateY(-5px);
+    /* Se eleva sutilmente */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta-icono {
+    font-size: 2.5rem;
+    color: var(--color-principal);
+    margin-bottom: 15px;
+}
+
+.tarjeta-destacada h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.btn-link {
+    color: var(--color-secundario);
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: auto;
+    /* Empuja el link al fondo de la tarjeta */
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+/* 4. HOVER EN REDES SOCIALES (Flexbox/Efecto) */
+.hover-icono {
+    transition: color 0.2s ease;
+}
+
+.hover-icono:hover {
+    color: var(--color-secundario) !important;
+}
