@@ -1,2 +1,37 @@
-/* Tipografía Story Script traída desde Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+/* VARIABLES DE DISEÑO (Colores folklóricos/tierra cálidos) */
+:root {
+    --color-principal: #6d4c41;
+    /* Marrón tierra cálido */
+    --color-secundario: #ffb300;
+    /* Amarillo/Dorado sol */
+    --color-fondo-tarjeta: #ffffff;
+}
+
+/* 1. SECCIÓN HERO (Inicio) */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+            url('../Img/fondo-merlo.JPG') no-repeat center center/cover;
+        /* <-- Ruta relativa a tu imagen */
+        height: 80vh;
+    /* Ocupa el 80% de la altura de la pantalla */
+}
+/* 3. ANIMACIONES (Clase 06 - Keyframes para el Hero) */
+@keyframes aparecerDesvanecido {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animacion-entrada {
+    animation: aparecerDesvanecido 1.2s ease-out forwards;
+}
+.animacion-retrasada {
+    opacity: 0;
+    animation: aparecerDesvanecido 1.2s ease-out 0.4s forwards;
+    /* Inicia un poquito después */
+}
