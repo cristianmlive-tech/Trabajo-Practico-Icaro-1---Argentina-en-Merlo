@@ -11,6 +11,14 @@ El proyecto proporciona una plataforma informativa y de pre-inscripción para de
 
 ---
 
+## 🎓 Contexto Académico
+
+Este proyecto fue desarrollado como entrega formal para el **"Proyecto integrador - Modulo 1" de la "Diplomatura en desarrollo web Full Stack 0326" de la academia Icaro**. 
+
+El objetivo principal es aplicar conceptos fundamentales de maquetación web semántica, diseño interactivo y maquetación responsiva mediante HTML5, CSS3 y Bootstrap 5 para el sitio web del **Encuentro Nacional de Folklore "Argentina en Merlo"**.
+
+---
+
 ## 🌐 Sitio Web Publicado
 El proyecto se encuentra desplegado y alojado públicamente a través de **GitHub Pages**:
 👉 **[Ver Sitio Web en Vivo](https://cristianmlive-tech.github.io/Trabajo-Practico-Icaro-1---Argentina-en-Merlo/)**
@@ -45,8 +53,8 @@ Como parte del proceso de maquetación y diseño de la interfaz, se realizó un 
 📁 argentina-en-merlo/
 ├── 📁 Img/                  # Logos, vectores y recursos fotográficos (.png, .jpg)
 ├── 📁 Paginas/              # Subpáginas HTML interconectadas
-│   ├── cronograma.html     # Cronograma del evento
-│   └── inscripcion.html    # Formulario de pre-inscripción
+│   ├── cronograma.html      # Cronograma del evento
+│   └── inscripcion.html     # Formulario de pre-inscripción
 │   └── encuentro.html       # Información basica del encuentro
 │   └── galeria.html         # Fotografías Varias
 ├── 📁 CSS/                  # Hoja de estilos personalizada y animaciones
