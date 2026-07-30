@@ -26,6 +26,19 @@ El proyecto se encuentra desplegado y alojado públicamente a través de **GitHu
 
 ---
 
+## 📐 Prototipado y Boceto Inicial
+
+Como parte del proceso de maquetación y diseño de la interfaz, se realizó un boceto previo en papel para definir la distribución de la sección Hero, el menú de navegación y las tablas del cronograma:
+
+<p align="center">
+  <img src="./Img/prototipo-papel.jpeg" width="400" alt="Boceto en papel de Argentina en Merlo">
+</p>
+<p align="center">
+  <em>Boceto en papel de Argentina en Merlo</em>
+</p>
+
+
+
 ## 📂 Estructura de Archivos del Proyecto
 
 ```text
@@ -40,6 +53,7 @@ El proyecto se encuentra desplegado y alojado públicamente a través de **GitHu
 ├── index.html               # Página principal (Home / Hero section)
 └── README.md                # Documentación del proyecto
 ```
+## 📝 Fracmento del Código
 
 ```html
 <!-- Pie de Página Accesible con Navegación al Inicio -->
