@@ -19,7 +19,7 @@
                 <!-- Logotipo Argentina en Merlo -->
                 <img src="./Img/LOGO.png" alt="Logo Argentina en Merlo" class="d-inline-block align-text-top me-2" style="height: 50px; width: auto;">
             </a>
-            <!-- Botón de toggling para dispositivos móviles -->
+            <!-- Botón hamburguesa para celular -->
            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -44,8 +44,8 @@
                 <img src="./Img/LOGO.png" alt="Argentina en Merlo" class="img-fluid"
                     style="max-height: 420px; width: auto; filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.5));">
             </div>
-            <p class="lead fs-3 animacion-retrasada">Encuentro Nacional de Folklore</p>
-            <hr class="mx-auto my-4 text-warning" style="width: 500px; height: 3px;">
+            <p class="lead fs-3 fw-bold animacion-retrasada">Encuentro Nacional de Folklore</p>
+            <hr class="mx-auto my-4" style="width: 500px; height: 3px;">
             <p class="fs-5 mb-4">Villa de Merlo, San Luis</p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                 <a href="./Paginas/cronograma.html" class="btn btn-warning btn-lg px-4 me-sm-3 fw-bold">Ver Cronograma</a>
@@ -68,7 +68,7 @@
             <div class="col-lg-6">
                 <!-- Contenedor responsive 16:9 de Bootstrap con bordes redondeados y sombra -->
                 <div class="ratio ratio-16x9 rounded shadow overflow-hidden">
-                    <!-- Agregamos: autoplay, loop y muted -->
+                    <!-- Video: autoplay, loop y muted -->
                     <video autoplay loop muted playsinline preload="metadata" class="w-100 h-100">
                         <source src="./Videos/folklore-merlo.mp4" type="video/mp4">
                     </video>
@@ -76,11 +76,10 @@
             </div>
         </div>
     </main>
-<!-- SECCIÓN DESTACADOS (Usando CSS Grid Personalizado) -->
+<!-- SECCIÓN TARJETAS(Usando CSS Grid Personalizado en CCS) -->
     <section class="bg-light py-5">
         <div class="container">
             <h2 class="text-center fw-bold mb-5">Prepará tu viaje al Encuentro</h2>
-
             <!-- Grilla de Tarjetas -->
             <div class="tarjetas-grid">
                 <!-- Tarjeta 1 -->
@@ -111,7 +110,7 @@
         </div>
     </section>
 
-    <!-- FOOTER (Flexbox) -->
+    <!-- FOOTER (Bootstrap Flexbox) -->
     <footer class="bg-dark text-white py-4 mt-auto">
         <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
             <div class="mb-3 mb-md-0">
@@ -122,23 +121,23 @@
             <div class="redes-sociales d-flex gap-3 fs-4">
                 <!-- Facebook -->
                 <a href="https://www.facebook.com/share/1FCN9T9bQH/" target="_blank" rel="noopener noreferrer" class="text-white hover-icono" title="Facebook Argentina en Merlo">
-                <i class="bi bi-facebook"></i>
-                 </a>
+                    <i class="bi bi-facebook"></i>
+                </a>
 
                 <!-- Instagram -->
                 <a href="https://www.instagram.com/argentinaenmerlo?igsh=dzd2aGx3NHBzMThz" target="_blank" rel="noopener noreferrer" class="text-white hover-icono" title="Instagram Argentina en Merlo">
-                 <i class="bi bi-instagram"></i>
-                 </a>
+                    <i class="bi bi-instagram"></i>
+                </a>
 
                 <!-- WhatsApp directo -->
                 <a href="https://wa.me/5493516317778?text=Hola,%20quisiera%20mas%20informacion%20sobre%20el%20encuentro%20Argentina%20en%20Merlo" target="_blank" rel="noopener noreferrer" class="text-white hover-icono" title="WhatsApp de Contacto">
-                <i class="bi bi-whatsapp"></i>
+                    <i class="bi bi-whatsapp"></i>
                 </a>
             </div>
         </div>
     </footer>
 
-        <!-- JS de Bootstrap (Necesario para que funcione el menú de celulares) -->
+    <!-- JS de Bootstrap (Necesario para que funcione el menú de celulares) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
